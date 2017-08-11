@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    margin-top: 20px;
 }
 
 .center {
@@ -21,7 +20,6 @@ body {
 }
 
 .container{
-    padding-top: 60px;
     max-width: 800px;
     color: #757474;
     margin: 0 auto;
