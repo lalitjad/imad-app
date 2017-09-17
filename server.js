@@ -96,15 +96,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+
+// Do not change port, otherwise your app won't run on IMAD servers
+// Use 8080 only for local development if you already have apache running on 80
+
 app.get('/:articleName', function (req, res) {
     //articleName== article-one
     //articles[aticleName]=={} content object for article one
     res.send(createTemplate(articles[articleName]));
   var articleName = req.params.articleName;
 });
-
-// Do not change port, otherwise your app won't run on IMAD servers
-// Use 8080 only for local development if you already have apache running on 80
 
 var port = 80;
 app.listen(port, function () {
