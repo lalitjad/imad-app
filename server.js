@@ -74,13 +74,6 @@ function createTemplate (data) {
     return htmlTemplate;
 }
 
-app.get('/:articleName', function (req, res) {
-    //articleName== article-one
-    //articles[aticleName]=={} content object for article one
-    res.send(createTemplate(articles[articleName]));
-  var articleName = req.params.articleName;
-});
-
 var counter=0;
 app.get('counter', function(req,res){
     counter=counter+1;
