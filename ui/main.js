@@ -42,7 +42,7 @@ submit.onclick=function(){
             }
     };
     
-    request.open('GET','http://lalitjad98.imad.hasura-app.io/counter',true);
+    request.open('GET','http://lalitjad98.imad.hasura-app.io/submit-name?name='+ name ,true);
     request.send(null);
 
 };
